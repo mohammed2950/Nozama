@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="hamburger-menu">
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <div id="open-butt">
+                <button class="openbtn" onclick="openNav()">☰</button>
+            </div>
+        </div>
+        <div class="nozama-image">
+            <div class="logo-img">
+                <img class="img" src="assets/nozama-logo-white.png" alt="">
+            </div>
+        </div>
+        <div class="search-bar">
+            <div class="search">
+
+                <input type="text" class="input" placeholder="search" onkeyup="search(this)">
+            </div>
+        </div>
+        <div class="log-in">
+            <div class="log">
+                <a onclick="openForm()">Log-in</a>
+                <div id="myForm">
+                    <form action="" onsubmit="login(event)">
+                        <h1>Login</h1>
+                        <label><b>Email</b></label>
+                        <input type="text" class="email" placeholder="Enter Email" required>
+                        <br>
+                        <label><b>Password</b></label>
+                        <input type="password" class="pass" placeholder="Enter Password" required>
+                        <br>
+                        <button type="submit">Login</button>
+                    </form>
+                    <button type="button" onclick="closeForm()">Close</button>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+    <div class="selected">
+        <ul class="link-list">
+            <li class="selected" onclick="filter(this)">New-Releases</li>
+            <li class="selected" onclick="filter(this)">Sale</li>
+            <li class="selected" onclick="filter(this)">Electronics</li>
+            <li class="selected" onclick="filter(this)">Food</li>
+            <li class="selected" onclick="filter(this)">Clothes</li>
+            <li class="selected" onclick="filter(this)">Best-Sellers</li>
+            <li class="selected" onclick="filter(this)">Gift-Cards</li>
+            <li class="selected" onclick="filter(this)">Customer Service</li>
+            <li>Sell</li>
+        </ul>
+    </div>
+    <div class="logo">
+        <div class="dis"> 
+            <button onclick="display()" class="butt">
+                <img class="image" src="assets/shopping-cart-304843_1280.png">
+            </button>
+            <span class="item-counter">0</span>
+        </div>
+    </div>
+        <div class="card">
+            <main></main>
+        </div>
+        <div class="addedItems">
+            <div class="items">
+
+
+            </div>
+        <button onclick="closeButton()" class="close">close</button>
+        </div>
+        
+</body>
+<script src="styles/data.js"></script>
+<script src="styles/style.js"></script>
+</html>
